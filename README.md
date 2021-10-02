@@ -30,3 +30,13 @@ First start by setting up CMake, we'll start with something really basic, mostly
     ```
     build/LearnVulkan
     ```
+
+## Step 1 - GLM
+
+Next we'll set up CMake to include external libraries starting with GLM.
+
+1. Download or git clone GLM into `Common/3rdParty`.
+2. Next create a `CMake` directory and inside there create a `FindGLM.cmake`. Then in `CMakeLists.txt` set `CMAKE_MODULE_PATH` to point to it the new directory.
+3. Update `CMakeLists.txt` to include `add_dubdirectory`, `find_package`, and `include_directories` for glm.
+4. CMake should now be finding and including the GLM we added.
+5. Check that it works, by updating `LearnVulkan.cpp` to include a glm header file and using a glm class or function.
