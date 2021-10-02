@@ -1,0 +1,3 @@
+[submodule "Common/3rdParty/glm"]
+	path = Common/3rdParty/glm
+	url = git@github.com:markjarzynski/glm.git

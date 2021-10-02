@@ -30,3 +30,10 @@ First start by setting up CMake, we'll start with something really basic, mostly
     ```
     build/LearnVulkan
     ```
+
+## Step 1 - GLM
+
+Next we'll set up CMake to include external libraries starting with GLM.
+
+1. Download or git clone GLM into `Common/3rdParty`.
+2. 
