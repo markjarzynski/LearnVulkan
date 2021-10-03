@@ -61,7 +61,7 @@ Next we'll include another 3rdParty library, GLFW. GLFW is a cross platform libr
 5. Now at the end of `CMakeLists.txt` we'll have to update the target_include_directories line to include the `Vulkan_INCLUDE_DIRS` and add a target_link_libraries to link `glfw` and the `Vulkan_LIBRARIES`
     ```
     target_include_directories(${PROJECT_NAME} PUBLIC "${PROJECT_BINARY_DIR}" "${Vulkan_INCLUDE_DIRS}")
-target_link_libraries(${PROJECT_NAME} glfw)
+    target_link_libraries(${PROJECT_NAME} glfw)
     ```
 5. To make sure it all works, edit `LearnVulkan.cpp` to create a glfw window. Since we're using Vulkan, GLFW has a define that needs to be set. Also don't forget to include the glfw3 header.
     ```
