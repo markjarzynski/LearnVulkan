@@ -1,6 +1,7 @@
 #pragma once
 
 #include "LearnVulkanWindow.h"
+#include "LearnVulkanPipeline.h"
 
 #include <string>
 
@@ -20,6 +21,7 @@ namespace lv
     private:
 
         LearnVulkanWindow lvWindow {WIDTH, HEIGHT, "Learn Vulkan"};
+        LearnVulkanPipeline lvPipeline {"shaders/simple.vert.spv", "shaders/simple.frag.spv"};
         
     };
 
