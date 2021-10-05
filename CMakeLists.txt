@@ -1,8 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # set the project name and version
-project(LearnVulkan VERSION 2.0)
-
+project(LearnVulkan VERSION 3.0)
 
 # specify the C++ standard
 set(CMAKE_CXX_STANDARD 17)
@@ -29,7 +28,7 @@ set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 add_subdirectory(Common/3rdParty/glfw)
 
-add_executable(${PROJECT_NAME} LearnVulkan.cpp)
+add_executable(${PROJECT_NAME} LearnVulkan.cpp LearnVulkanApp.cpp LearnVulkanApp.h LearnVulkanWindow.cpp LearnVulkanWindow.h)
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${PROJECT_BINARY_DIR}" "${Vulkan_INCLUDE_DIRS}")
 target_link_libraries(${PROJECT_NAME} glfw)
