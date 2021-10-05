@@ -28,7 +28,7 @@ set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 add_subdirectory(Common/3rdParty/glfw)
 
-add_executable(${PROJECT_NAME} LearnVulkan.cpp LearnVulkanApp.cpp LearnVulkanApp.h LearnVulkanWindow.cpp LearnVulkanWindow.h)
+add_executable(${PROJECT_NAME} LearnVulkan.cpp LearnVulkanApp.cpp LearnVulkanApp.h LearnVulkanWindow.cpp LearnVulkanWindow.h LearnVulkanPipeline.cpp LearnVulkanPipeline.h)
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${PROJECT_BINARY_DIR}" "${Vulkan_INCLUDE_DIRS}")
 target_link_libraries(${PROJECT_NAME} glfw)
